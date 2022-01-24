@@ -1,0 +1,6 @@
+module Pods_TestPoCIntegration {
+  umbrella header "Pods-TestPoCIntegration-umbrella.h"
+
+  export *
+  module * { export * }
+}
