@@ -1,3 +1,3 @@
 target 'TestPoCIntegration' do
-  pod 'TestGithubCI', '~> 0.0'
+  pod 'TestGithubCI', '~> 0.2'
 end

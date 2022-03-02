@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-TestPoCIntegration/Pods-TestPoCIntegration-frameworks.sh
+${PODS_XCFRAMEWORKS_BUILD_DIR}/TestGithubCI/Core.framework/Core
+${PODS_XCFRAMEWORKS_BUILD_DIR}/TestGithubCI/TestXCFramework.framework/TestXCFramework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/TestGithubCI/MLFoundations.framework/MLFoundations

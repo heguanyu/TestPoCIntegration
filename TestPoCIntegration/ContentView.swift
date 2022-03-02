@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
-import TestGithubCI
+import TestXCFramework
 
 struct ContentView: View {
     var body: some View {
-        Text("Test string: " + TestLibWithXCFramework.someStaticFunction())
+//        Text("Test string: " + TestLibWithXCFramework.someStaticFunction())
+//            .padding()
+
+        Text("Test string: " + (TestLibWithXCFramework.init().someFunctionWithParam(input: "xyz") ))
             .padding()
+
+
     }
 }
 

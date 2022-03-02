@@ -1,0 +1,11 @@
+framework module MLFoundations {
+  umbrella header "MLFoundations.h"
+
+  export *
+  module * { export * }
+}
+
+module MLFoundations.Swift {
+    header "MLFoundations-Swift.h"
+    requires objc
+}

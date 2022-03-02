@@ -1,0 +1,3 @@
+${PODS_XCFRAMEWORKS_BUILD_DIR}/TestGithubCI/Core.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/TestGithubCI/TestXCFramework.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/TestGithubCI/MLFoundations.framework

@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3CA5459236682291D1F60FEC /* libPods-TestPoCIntegration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C171D883149CDA6058F83D /* libPods-TestPoCIntegration.a */; };
 		F64D89F9279B3E1B00D6D73A /* TestPoCIntegrationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64D89F8279B3E1B00D6D73A /* TestPoCIntegrationApp.swift */; };
 		F64D89FB279B3E1B00D6D73A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64D89FA279B3E1B00D6D73A /* ContentView.swift */; };
 		F64D89FD279B3E1E00D6D73A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64D89FC279B3E1E00D6D73A /* Assets.xcassets */; };
 		F64D8A00279B3E1E00D6D73A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64D89FF279B3E1E00D6D73A /* Preview Assets.xcassets */; };
+		F683FE6527C6E0D200E4F535 /* TestGithubCI-dryrun.zip in Resources */ = {isa = PBXBuildFile; fileRef = F683FE6427C6E0D200E4F535 /* TestGithubCI-dryrun.zip */; };
+		F683FE6B27C6E0FB00E4F535 /* TestXCFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F683FE6A27C6E0FB00E4F535 /* TestXCFramework.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +23,8 @@
 		F64D89FA279B3E1B00D6D73A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F64D89FC279B3E1E00D6D73A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F64D89FF279B3E1E00D6D73A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F8C171D883149CDA6058F83D /* libPods-TestPoCIntegration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestPoCIntegration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F683FE6427C6E0D200E4F535 /* TestGithubCI-dryrun.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "TestGithubCI-dryrun.zip"; sourceTree = "<group>"; };
+		F683FE6A27C6E0FB00E4F535 /* TestXCFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = TestXCFramework.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,7 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CA5459236682291D1F60FEC /* libPods-TestPoCIntegration.a in Frameworks */,
+				F683FE6B27C6E0FB00E4F535 /* TestXCFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +42,8 @@
 		24603A772DDC8BFDE1EE14C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F8C171D883149CDA6058F83D /* libPods-TestPoCIntegration.a */,
+				F683FE6A27C6E0FB00E4F535 /* TestXCFramework.xcframework */,
+				F683FE6427C6E0D200E4F535 /* TestGithubCI-dryrun.zip */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,6 +105,7 @@
 				F64D89F1279B3E1B00D6D73A /* Sources */,
 				F64D89F2279B3E1B00D6D73A /* Frameworks */,
 				F64D89F3279B3E1B00D6D73A /* Resources */,
+				4642AF06992949F4666965FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F64D8A00279B3E1E00D6D73A /* Preview Assets.xcassets in Resources */,
+				F683FE6527C6E0D200E4F535 /* TestGithubCI-dryrun.zip in Resources */,
 				F64D89FD279B3E1E00D6D73A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +163,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4642AF06992949F4666965FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestPoCIntegration/Pods-TestPoCIntegration-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestPoCIntegration/Pods-TestPoCIntegration-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestPoCIntegration/Pods-TestPoCIntegration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		99033CAA031271697D22B193 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,6 +345,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TestPoCIntegration/Preview Content\"";
 				DEVELOPMENT_TEAM = 5ZKJW2ZKDU;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"\"${PODS_ROOT}/TestGithubCI/TestXCFramework-0.1.2\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/TestGithubCI\"",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -355,6 +382,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TestPoCIntegration/Preview Content\"";
 				DEVELOPMENT_TEAM = 5ZKJW2ZKDU;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"\"${PODS_ROOT}/TestGithubCI/TestXCFramework-0.1.2\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/TestGithubCI\"",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
