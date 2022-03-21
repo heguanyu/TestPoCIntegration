@@ -11,8 +11,8 @@
 		F64D89FB279B3E1B00D6D73A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64D89FA279B3E1B00D6D73A /* ContentView.swift */; };
 		F64D89FD279B3E1E00D6D73A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64D89FC279B3E1E00D6D73A /* Assets.xcassets */; };
 		F64D8A00279B3E1E00D6D73A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64D89FF279B3E1E00D6D73A /* Preview Assets.xcassets */; };
-		F683FE6527C6E0D200E4F535 /* TestGithubCI-dryrun.zip in Resources */ = {isa = PBXBuildFile; fileRef = F683FE6427C6E0D200E4F535 /* TestGithubCI-dryrun.zip */; };
-		F683FE6B27C6E0FB00E4F535 /* TestXCFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F683FE6A27C6E0FB00E4F535 /* TestXCFramework.xcframework */; };
+		F6715A1E27D28472000A8B6C /* Instabug.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6715A1D27D28472000A8B6C /* Instabug.xcframework */; };
+		F6C4068427E902EA002A7D0C /* LinkedinAudienceNetwork.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C4068327E902EA002A7D0C /* LinkedinAudienceNetwork.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +23,8 @@
 		F64D89FA279B3E1B00D6D73A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F64D89FC279B3E1E00D6D73A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F64D89FF279B3E1E00D6D73A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F683FE6427C6E0D200E4F535 /* TestGithubCI-dryrun.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "TestGithubCI-dryrun.zip"; sourceTree = "<group>"; };
-		F683FE6A27C6E0FB00E4F535 /* TestXCFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = TestXCFramework.xcframework; sourceTree = "<group>"; };
+		F6715A1D27D28472000A8B6C /* Instabug.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Instabug.xcframework; sourceTree = "<group>"; };
+		F6C4068327E902EA002A7D0C /* LinkedinAudienceNetwork.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LinkedinAudienceNetwork.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F683FE6B27C6E0FB00E4F535 /* TestXCFramework.xcframework in Frameworks */,
+				F6C4068427E902EA002A7D0C /* LinkedinAudienceNetwork.xcframework in Frameworks */,
+				F6715A1E27D28472000A8B6C /* Instabug.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +43,8 @@
 		24603A772DDC8BFDE1EE14C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F683FE6A27C6E0FB00E4F535 /* TestXCFramework.xcframework */,
-				F683FE6427C6E0D200E4F535 /* TestGithubCI-dryrun.zip */,
+				F6C4068327E902EA002A7D0C /* LinkedinAudienceNetwork.xcframework */,
+				F6715A1D27D28472000A8B6C /* Instabug.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,7 +156,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F64D8A00279B3E1E00D6D73A /* Preview Assets.xcassets in Resources */,
-				F683FE6527C6E0D200E4F535 /* TestGithubCI-dryrun.zip in Resources */,
 				F64D89FD279B3E1E00D6D73A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

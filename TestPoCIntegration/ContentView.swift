@@ -6,14 +6,16 @@
 //
 
 import SwiftUI
-import TestXCFramework
+import LinkedinAudienceNetwork
 
 struct ContentView: View {
     var body: some View {
 //        Text("Test string: " + TestLibWithXCFramework.someStaticFunction())
 //            .padding()
 
-        Text("Test string: " + (TestLibWithXCFramework.init().someFunctionWithParam(input: "xyz") ))
+        var conf = AudienceNetworkConfiguration.init(key: "abc")
+        var client = AudienceNetwork.start(configuration: conf, completion: nil)
+        Text("Test string: " + (AudienceNetwork.groupIdentityToken))
             .padding()
 
 
