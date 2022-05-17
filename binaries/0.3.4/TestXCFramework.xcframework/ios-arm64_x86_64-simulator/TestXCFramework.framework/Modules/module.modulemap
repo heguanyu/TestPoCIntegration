@@ -1,4 +1,0 @@
-framework module TestXCFramework {
-  header "TestXCFramework-Swift.h"
-  requires objc
-}
