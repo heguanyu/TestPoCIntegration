@@ -11,9 +11,23 @@
 		F64D89FB279B3E1B00D6D73A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64D89FA279B3E1B00D6D73A /* ContentView.swift */; };
 		F64D89FD279B3E1E00D6D73A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64D89FC279B3E1E00D6D73A /* Assets.xcassets */; };
 		F64D8A00279B3E1E00D6D73A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64D89FF279B3E1E00D6D73A /* Preview Assets.xcassets */; };
+		F6554DAF28063C8D00DDB5EF /* LinkedinAudienceNetwork.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6554DAE28063C8D00DDB5EF /* LinkedinAudienceNetwork.xcframework */; };
+		F66A7AB027F64825002015C0 /* TestObjectCCode.m in Sources */ = {isa = PBXBuildFile; fileRef = F66A7AAF27F64825002015C0 /* TestObjectCCode.m */; };
 		F6715A1E27D28472000A8B6C /* Instabug.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6715A1D27D28472000A8B6C /* Instabug.xcframework */; };
-		F6C4068427E902EA002A7D0C /* LinkedinAudienceNetwork.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C4068327E902EA002A7D0C /* LinkedinAudienceNetwork.xcframework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F66A7AAD27F646F2002015C0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5BD588217EC124566EF4D6CB /* Pods-TestPoCIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPoCIntegration.debug.xcconfig"; path = "Target Support Files/Pods-TestPoCIntegration/Pods-TestPoCIntegration.debug.xcconfig"; sourceTree = "<group>"; };
@@ -23,8 +37,11 @@
 		F64D89FA279B3E1B00D6D73A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F64D89FC279B3E1E00D6D73A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F64D89FF279B3E1E00D6D73A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F6554DAE28063C8D00DDB5EF /* LinkedinAudienceNetwork.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LinkedinAudienceNetwork.xcframework; sourceTree = "<group>"; };
+		F66A7AAE27F64825002015C0 /* TestPoCIntegration-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestPoCIntegration-Bridging-Header.h"; sourceTree = "<group>"; };
+		F66A7AAF27F64825002015C0 /* TestObjectCCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObjectCCode.m; sourceTree = "<group>"; };
+		F66A7AB127F64AE9002015C0 /* TestObjectCCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObjectCCode.h; sourceTree = "<group>"; };
 		F6715A1D27D28472000A8B6C /* Instabug.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Instabug.xcframework; sourceTree = "<group>"; };
-		F6C4068327E902EA002A7D0C /* LinkedinAudienceNetwork.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LinkedinAudienceNetwork.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6C4068427E902EA002A7D0C /* LinkedinAudienceNetwork.xcframework in Frameworks */,
+				F6554DAF28063C8D00DDB5EF /* LinkedinAudienceNetwork.xcframework in Frameworks */,
 				F6715A1E27D28472000A8B6C /* Instabug.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,7 +60,7 @@
 		24603A772DDC8BFDE1EE14C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F6C4068327E902EA002A7D0C /* LinkedinAudienceNetwork.xcframework */,
+				F6554DAE28063C8D00DDB5EF /* LinkedinAudienceNetwork.xcframework */,
 				F6715A1D27D28472000A8B6C /* Instabug.xcframework */,
 			);
 			name = Frameworks;
@@ -83,6 +100,9 @@
 				F64D89FA279B3E1B00D6D73A /* ContentView.swift */,
 				F64D89FC279B3E1E00D6D73A /* Assets.xcassets */,
 				F64D89FE279B3E1E00D6D73A /* Preview Content */,
+				F66A7AAF27F64825002015C0 /* TestObjectCCode.m */,
+				F66A7AAE27F64825002015C0 /* TestPoCIntegration-Bridging-Header.h */,
+				F66A7AB127F64AE9002015C0 /* TestObjectCCode.h */,
 			);
 			path = TestPoCIntegration;
 			sourceTree = "<group>";
@@ -106,7 +126,7 @@
 				F64D89F1279B3E1B00D6D73A /* Sources */,
 				F64D89F2279B3E1B00D6D73A /* Frameworks */,
 				F64D89F3279B3E1B00D6D73A /* Resources */,
-				4642AF06992949F4666965FD /* [CP] Embed Pods Frameworks */,
+				F66A7AAD27F646F2002015C0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +149,7 @@
 				TargetAttributes = {
 					F64D89F4279B3E1B00D6D73A = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -163,23 +184,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4642AF06992949F4666965FD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestPoCIntegration/Pods-TestPoCIntegration-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestPoCIntegration/Pods-TestPoCIntegration-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestPoCIntegration/Pods-TestPoCIntegration-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		99033CAA031271697D22B193 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -209,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F66A7AB027F64825002015C0 /* TestObjectCCode.m in Sources */,
 				F64D89FB279B3E1B00D6D73A /* ContentView.swift in Sources */,
 				F64D89F9279B3E1B00D6D73A /* TestPoCIntegrationApp.swift in Sources */,
 			);
@@ -252,6 +257,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -313,6 +319,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -339,11 +346,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TestPoCIntegration/Preview Content\"";
-				DEVELOPMENT_TEAM = 5ZKJW2ZKDU;
+				DEVELOPMENT_TEAM = 57Y47U492U;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)/**",
@@ -356,6 +365,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -365,6 +375,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestPoCIntegration/TestPoCIntegration-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -376,11 +388,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TestPoCIntegration/Preview Content\"";
-				DEVELOPMENT_TEAM = 5ZKJW2ZKDU;
+				DEVELOPMENT_TEAM = 57Y47U492U;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)/**",
@@ -393,6 +407,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,6 +417,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestPoCIntegration/TestPoCIntegration-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -1,6 +1,0 @@
-module TestGithubCI {
-  umbrella header "TestGithubCI-umbrella.h"
-
-  export *
-  module * { export * }
-}

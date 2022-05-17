@@ -6,17 +6,17 @@
 //
 
 import SwiftUI
-import LinkedinAudienceNetwork
+//import LinkedinAudienceNetwork
 
 struct ContentView: View {
     var body: some View {
 //        Text("Test string: " + TestLibWithXCFramework.someStaticFunction())
 //            .padding()
 
-        var conf = AudienceNetworkConfiguration.init(key: "abc")
-        var client = AudienceNetwork.start(configuration: conf, completion: nil)
-        Text("Test string: " + (AudienceNetwork.groupIdentityToken))
-            .padding()
+//        Text("Test Swift string: " + tryGroupId()).padding()
+        var sampleObjcObject = SampleObject()
+        Text("Test Objective C string: " + sampleObjcObject.tryGroupId()).padding()
+//        Text("Test string: " + "This do not include LAN").padding()
 
 
     }
@@ -27,3 +27,8 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+//
+//func tryGroupId() -> String {
+//    AudienceNetwork.start(with: "abc", completion: nil)
+//    return AudienceNetwork.groupIdentityToken
+//}

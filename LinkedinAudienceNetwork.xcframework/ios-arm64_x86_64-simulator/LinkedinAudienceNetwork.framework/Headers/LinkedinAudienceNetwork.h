@@ -1,10 +1,3 @@
-//
-//  LinkedinAudienceNetwork.h
-//  LinkedinAudienceNetwork
-//
-//  Created by Guanyu He on 3/7/22.
-//
-
 #import <Foundation/Foundation.h>
 
 //! Project version number for LinkedinAudienceNetwork.

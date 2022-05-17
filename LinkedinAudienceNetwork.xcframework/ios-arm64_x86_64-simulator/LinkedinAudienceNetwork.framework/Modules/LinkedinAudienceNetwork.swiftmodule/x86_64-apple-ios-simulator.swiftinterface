@@ -8,34 +8,19 @@ import Foundation
 import Swift
 import UIKit
 import _Concurrency
-import os
-@objc(LANLoggerProtocol) public protocol LoggerProtocol {
-  @objc func log(level: LinkedinAudienceNetwork.LogLevel, message: Swift.String, file: Swift.String, function: Swift.String, line: Swift.UInt)
+@_hasMissingDesignatedInitializers public class PRIVATE_BetaConfigurations {
+  @objc deinit
 }
-@objc(LANLogLevel) public enum LogLevel : Swift.Int {
-  case info
-  case warning
-  case error
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(LANAudienceNetwork) @objcMembers public class AudienceNetwork : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(LinkedinAudienceNetwork) @objcMembers public class AudienceNetwork : ObjectiveC.NSObject {
   @objc public static var groupIdentityToken: Swift.String {
     @objc get
   }
-  @objc public static func start(configuration: LinkedinAudienceNetwork.AudienceNetworkConfiguration, completion: ((Swift.Error?) -> Swift.Void)?)
+  @objc(startWithKey:completion:) public static func start(with key: Swift.String, completion: ((Swift.Error?) -> Swift.Void)?)
+  @objc(startWithConfiguration:completion:) public static func start(with configuration: LinkedinAudienceNetwork.AudienceNetworkConfiguration, completion: ((Swift.Error?) -> Swift.Void)?)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(LANAudienceNetworkConfiguration) @objcMembers public class AudienceNetworkConfiguration : ObjectiveC.NSObject {
-  @objc final public let key: Swift.String
-  @objc final public let logger: LinkedinAudienceNetwork.LoggerProtocol
-  @objc convenience public init(key: Swift.String)
-  @objc public init(key: Swift.String, logger: LinkedinAudienceNetwork.LoggerProtocol?)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(LinkedinAudienceNetworkConfiguration) @objcMembers public class AudienceNetworkConfiguration : ObjectiveC.NSObject {
+  @objc public var diagnosticDataCollectionEnabled: Swift.Bool
+  @objc public init(key: Swift.String)
   @objc deinit
 }
-extension LinkedinAudienceNetwork.LogLevel : Swift.Equatable {}
-extension LinkedinAudienceNetwork.LogLevel : Swift.Hashable {}
-extension LinkedinAudienceNetwork.LogLevel : Swift.RawRepresentable {}

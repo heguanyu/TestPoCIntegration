@@ -6,39 +6,39 @@
 	<dict>
 		<key>Headers/LinkedinAudienceNetwork-Swift.h</key>
 		<data>
-		GTht2fp6hWlknRkb99eyMtVHQhM=
+		2opOtoydjBBpDI3fVXhILyN+QIk=
 		</data>
 		<key>Headers/LinkedinAudienceNetwork.h</key>
 		<data>
-		531X0q6amTda0htvqHQGTgqiAto=
+		mQJZfUrQDdrq6i/maj+CBF+tCT0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iwCFZFp4/bX4aJhtwEd9GGgXpsk=
+		juyHymcu/q8VLcTC0iwgX6F8B+0=
 		</data>
 		<key>Modules/LinkedinAudienceNetwork.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		7TZiPsgiimFS3dy0KPkFolrBn0A=
+		J2CL+oCA78TPKjSgrMS+S7B0Rq4=
 		</data>
 		<key>Modules/LinkedinAudienceNetwork.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		OfAfh2sEWTVNPf7YYNAcpQT4GEU=
+		baSA+XoU32+INHOQ+0/W98mCrvI=
 		</data>
 		<key>Modules/LinkedinAudienceNetwork.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		1sV9Wt7twBvBUkCUk5OdKcckN6E=
+		ytLSiroYDxyqj3JoMOvsjzYdJA4=
 		</data>
 		<key>Modules/LinkedinAudienceNetwork.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		BxpiguntKW9zhMM17GZvO1waxD4=
+		F8b4EiKnqFQHn7wO2wuD5Wuh6DI=
 		</data>
 		<key>Modules/LinkedinAudienceNetwork.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		iZiHdgDZpm61r3iOaVd3LTLfe4E=
+		h2UO8lz1qORe+4xJV9dbP4GLj4k=
 		</data>
 		<key>Modules/LinkedinAudienceNetwork.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		m4ZPrxYsexJH47WOd9wcZ+edPgc=
+		nawz88WqEeOBmtMuE+T21zlVGCY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,56 +51,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hCQNmCOKtUNblHMpY6px5pfO5nFymQC43Tmd6kCD0Ss=
+			xSQuVl7EdYqWYHdBW/NBgqq9GoLJYwoQgPwET7Qlumc=
 			</data>
 		</dict>
 		<key>Headers/LinkedinAudienceNetwork.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wtXLgmJAiamWuDnT3QZdWqdd9G37VxJLwYhiOmV+cEI=
+			waQ6HGDSrMQay591TmAxNpQXoWbyKJyjbW34eZpV1BA=
 			</data>
 		</dict>
 		<key>Modules/LinkedinAudienceNetwork.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LTYFYIED+m/XbfUDoCpo1c7R5x7MkEN0hheD6H1bQXs=
+			ElL92jZzV9lBBxHTbUcjxoYv/LtCRSOP4g9AAng4/P8=
 			</data>
 		</dict>
 		<key>Modules/LinkedinAudienceNetwork.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HSMain+tCKMWZT7TfP6AF9OvAGDA3TRmOpWBsRleqzk=
+			yQYsSnCqY/uiw2AhXwKtvAZAJpKY4Yi6cgkcnauqcxc=
 			</data>
 		</dict>
 		<key>Modules/LinkedinAudienceNetwork.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uHsDe3Eonh62nCktZxsNnpmF5/fahBntmk3tTVZLB2c=
+			Hi+WxS4zk8qQoVZ+a5DPjXuHDSYJDu4Eokh5bFqlUM8=
 			</data>
 		</dict>
 		<key>Modules/LinkedinAudienceNetwork.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4mB4ii0QmB4/dNwWGhyeJaOczXnMqlxYjQ4qqFUCIwM=
+			Ul1XOiezsVY/E9Qt/N5f3Y0SVdu1zgh6RKTIwB75cIc=
 			</data>
 		</dict>
 		<key>Modules/LinkedinAudienceNetwork.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XMvmxy/JNcezB+qQPVkeqCBNyHhV251JLXKdz2jixZU=
+			8jrpV1q6SKYZEHOCu+Uw5efOOtr+LkMFVunF4RH9TYQ=
 			</data>
 		</dict>
 		<key>Modules/LinkedinAudienceNetwork.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HoHxBVqhe4Cggj5vruxhxOG9jVYJclq/gvtYVUxG04c=
+			8RX3TQPe4L0ucSQ4z2fWDUkS38GcGcKFiyIxomaZ6FQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import LinkedinAudienceNetwork
 
 @main
 struct TestPoCIntegrationApp: App {

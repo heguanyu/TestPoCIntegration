@@ -216,14 +216,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class NSString;
-@class LANAudienceNetworkConfiguration;
+@class LinkedinAudienceNetworkConfiguration;
 
-/// Main interface to use Linkedin Audience Network in your app.
-/// Start should be called as soon as possible and preferrably complete before Ad Requests are made in order to fill Bid Requests to Linkedin.
-/// warning:
-/// Call <code>start(configuration:completion:)</code> before accessing any other functionality to ensure initialization has occured.
 SWIFT_CLASS_NAMED("AudienceNetwork")
-@interface LANAudienceNetwork : NSObject
+@interface LinkedinAudienceNetwork : NSObject
 /// The Group Identity Token associated with the current user.
 /// This token should be passed to Bid Requests sent to Linkedin via the OpenRTB spec.
 /// This token is available if it was previously cached or upon successful completion of the <code>start</code> method.
@@ -232,7 +228,16 @@ SWIFT_CLASS_NAMED("AudienceNetwork")
 /// If accessed before <code>start</code> this value will return an empty string.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull groupIdentityToken;)
 + (NSString * _Nonnull)groupIdentityToken SWIFT_WARN_UNUSED_RESULT;
-/// Initializes and starts the Audience Network SDK
+/// Initializes and starts the Audience Network SDK.
+/// The start process involves initialization, authentication with the key provided, and processing of required features.
+/// important:
+/// The <code>completion</code> block may be called on a background queue
+/// \param key The key required to start the Audience Network SDK.
+///
+/// \param completion The <code>completion</code> callback when the SDK finishes the start process, may be called on a background queue.
+///
++ (void)startWithKey:(NSString * _Nonnull)key completion:(void (^ _Nullable)(NSError * _Nullable))completion;
+/// Initializes and starts the Audience Network SDK.
 /// The start process involves initialization, authentication with the key provided, and processing of required features.
 /// important:
 /// The <code>completion</code> block may be called on a background queue
@@ -240,66 +245,24 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 ///
 /// \param completion The <code>completion</code> callback when the SDK finishes the start process, may be called on a background queue.
 ///
-+ (void)startWithConfiguration:(LANAudienceNetworkConfiguration * _Nonnull)configuration completion:(void (^ _Nullable)(NSError * _Nullable))completion;
++ (void)startWithConfiguration:(LinkedinAudienceNetworkConfiguration * _Nonnull)configuration completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@protocol LANLoggerProtocol;
 
-/// The configuration for the Audience Network SDK
+/// The configuration for the Audience Network SDK.
+/// This class is only necessary if additional configuration is desired.
 SWIFT_CLASS_NAMED("AudienceNetworkConfiguration")
-@interface LANAudienceNetworkConfiguration : NSObject
-/// The authentication key for the SDK
-@property (nonatomic, readonly, copy) NSString * _Nonnull key;
-/// The logger.
-@property (nonatomic, readonly, strong) id <LANLoggerProtocol> _Nonnull logger;
-/// Creates a configuration with the authentication key for the SDK.
-/// A default logger will be provided
-/// \param key The authentication key for the SDK
+@interface LinkedinAudienceNetworkConfiguration : NSObject
+/// Determines whether non-personally identifiable data collection is allowed for diagnostic purposes.
+@property (nonatomic) BOOL diagnosticDataCollectionEnabled;
+/// Initializer for a customizable configuration.
+/// \param key The required authentication key for the SDK
 ///
-- (nonnull instancetype)initWithKey:(NSString * _Nonnull)key;
-/// Creates a configuration with the authentication key and a custom logger for the SDK
-/// \param key The authentication key for the SDK
-///
-/// \param logger The custom logger. Set to nil to disable logging.
-///
-- (nonnull instancetype)initWithKey:(NSString * _Nonnull)key logger:(id <LANLoggerProtocol> _Nullable)logger OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithKey:(NSString * _Nonnull)key OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-/// The various log levels that the logging system provides.
-typedef SWIFT_ENUM_NAMED(NSInteger, LANLogLevel, "LogLevel", open) {
-/// The informative log level. Used to capture information that may be helpful, but not essential, for troubleshooting errors.
-/// Only stored in memory, never persisted
-  LANLogLevelInfo = 0,
-/// The warning log level. Used to capture information about things that might result in a failure.
-/// Only stored in memory, never persisted
-  LANLogLevelWarning = 1,
-/// The rrror log level. Used to report severe errors that must be addressed.
-/// Logs from errors will be persisted can be read from the simulator or device using the Console.app.
-  LANLogLevelError = 2,
-};
-
-
-/// A protocol for writing string messages to the logging system.
-/// It’s optional for consumers of the library to implement this. A default logger will be used if not set.
-/// The default logger will write logs to the system log with subsystem name <code>com.linkedin.AudienceNetwork</code> and category <code>warning</code>.
-SWIFT_PROTOCOL_NAMED("LoggerProtocol")
-@protocol LANLoggerProtocol
-/// Writes a message to the log using the specified log level.
-/// \param level The message’s log level, which determines the severity of the message. For possible values, see <code>LoggerLevel</code>.
-///
-/// \param message The message string that the logger writes to the log.
-///
-/// \param file The name of the source file.
-///
-/// \param function The name of the function in which the method is called.
-///
-/// \param line The current line in the source file.
-///
-- (void)logWithLevel:(enum LANLogLevel)level message:(NSString * _Nonnull)message file:(NSString * _Nonnull)file function:(NSString * _Nonnull)function line:(NSUInteger)line;
 @end
 
 #if __has_attribute(external_source_symbol)
@@ -525,14 +488,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class NSString;
-@class LANAudienceNetworkConfiguration;
+@class LinkedinAudienceNetworkConfiguration;
 
-/// Main interface to use Linkedin Audience Network in your app.
-/// Start should be called as soon as possible and preferrably complete before Ad Requests are made in order to fill Bid Requests to Linkedin.
-/// warning:
-/// Call <code>start(configuration:completion:)</code> before accessing any other functionality to ensure initialization has occured.
 SWIFT_CLASS_NAMED("AudienceNetwork")
-@interface LANAudienceNetwork : NSObject
+@interface LinkedinAudienceNetwork : NSObject
 /// The Group Identity Token associated with the current user.
 /// This token should be passed to Bid Requests sent to Linkedin via the OpenRTB spec.
 /// This token is available if it was previously cached or upon successful completion of the <code>start</code> method.
@@ -541,7 +500,16 @@ SWIFT_CLASS_NAMED("AudienceNetwork")
 /// If accessed before <code>start</code> this value will return an empty string.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull groupIdentityToken;)
 + (NSString * _Nonnull)groupIdentityToken SWIFT_WARN_UNUSED_RESULT;
-/// Initializes and starts the Audience Network SDK
+/// Initializes and starts the Audience Network SDK.
+/// The start process involves initialization, authentication with the key provided, and processing of required features.
+/// important:
+/// The <code>completion</code> block may be called on a background queue
+/// \param key The key required to start the Audience Network SDK.
+///
+/// \param completion The <code>completion</code> callback when the SDK finishes the start process, may be called on a background queue.
+///
++ (void)startWithKey:(NSString * _Nonnull)key completion:(void (^ _Nullable)(NSError * _Nullable))completion;
+/// Initializes and starts the Audience Network SDK.
 /// The start process involves initialization, authentication with the key provided, and processing of required features.
 /// important:
 /// The <code>completion</code> block may be called on a background queue
@@ -549,66 +517,24 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 ///
 /// \param completion The <code>completion</code> callback when the SDK finishes the start process, may be called on a background queue.
 ///
-+ (void)startWithConfiguration:(LANAudienceNetworkConfiguration * _Nonnull)configuration completion:(void (^ _Nullable)(NSError * _Nullable))completion;
++ (void)startWithConfiguration:(LinkedinAudienceNetworkConfiguration * _Nonnull)configuration completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@protocol LANLoggerProtocol;
 
-/// The configuration for the Audience Network SDK
+/// The configuration for the Audience Network SDK.
+/// This class is only necessary if additional configuration is desired.
 SWIFT_CLASS_NAMED("AudienceNetworkConfiguration")
-@interface LANAudienceNetworkConfiguration : NSObject
-/// The authentication key for the SDK
-@property (nonatomic, readonly, copy) NSString * _Nonnull key;
-/// The logger.
-@property (nonatomic, readonly, strong) id <LANLoggerProtocol> _Nonnull logger;
-/// Creates a configuration with the authentication key for the SDK.
-/// A default logger will be provided
-/// \param key The authentication key for the SDK
+@interface LinkedinAudienceNetworkConfiguration : NSObject
+/// Determines whether non-personally identifiable data collection is allowed for diagnostic purposes.
+@property (nonatomic) BOOL diagnosticDataCollectionEnabled;
+/// Initializer for a customizable configuration.
+/// \param key The required authentication key for the SDK
 ///
-- (nonnull instancetype)initWithKey:(NSString * _Nonnull)key;
-/// Creates a configuration with the authentication key and a custom logger for the SDK
-/// \param key The authentication key for the SDK
-///
-/// \param logger The custom logger. Set to nil to disable logging.
-///
-- (nonnull instancetype)initWithKey:(NSString * _Nonnull)key logger:(id <LANLoggerProtocol> _Nullable)logger OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithKey:(NSString * _Nonnull)key OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-/// The various log levels that the logging system provides.
-typedef SWIFT_ENUM_NAMED(NSInteger, LANLogLevel, "LogLevel", open) {
-/// The informative log level. Used to capture information that may be helpful, but not essential, for troubleshooting errors.
-/// Only stored in memory, never persisted
-  LANLogLevelInfo = 0,
-/// The warning log level. Used to capture information about things that might result in a failure.
-/// Only stored in memory, never persisted
-  LANLogLevelWarning = 1,
-/// The rrror log level. Used to report severe errors that must be addressed.
-/// Logs from errors will be persisted can be read from the simulator or device using the Console.app.
-  LANLogLevelError = 2,
-};
-
-
-/// A protocol for writing string messages to the logging system.
-/// It’s optional for consumers of the library to implement this. A default logger will be used if not set.
-/// The default logger will write logs to the system log with subsystem name <code>com.linkedin.AudienceNetwork</code> and category <code>warning</code>.
-SWIFT_PROTOCOL_NAMED("LoggerProtocol")
-@protocol LANLoggerProtocol
-/// Writes a message to the log using the specified log level.
-/// \param level The message’s log level, which determines the severity of the message. For possible values, see <code>LoggerLevel</code>.
-///
-/// \param message The message string that the logger writes to the log.
-///
-/// \param file The name of the source file.
-///
-/// \param function The name of the function in which the method is called.
-///
-/// \param line The current line in the source file.
-///
-- (void)logWithLevel:(enum LANLogLevel)level message:(NSString * _Nonnull)message file:(NSString * _Nonnull)file function:(NSString * _Nonnull)function line:(NSUInteger)line;
 @end
 
 #if __has_attribute(external_source_symbol)
