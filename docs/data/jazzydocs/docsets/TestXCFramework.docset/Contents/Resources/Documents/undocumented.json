@@ -1,19 +1,19 @@
 {
   "warnings": [
     {
-      "file": "/Users/ghe/projects/TestGithubCI/TestXCFramework/TestLibWithXCFramework.swift",
+      "file": "/Users/runner/work/TestGithubCI/TestGithubCI/main/TestXCFramework/TestLibWithXCFramework.swift",
       "line": 11,
       "symbol": "TestLibWithXCFramework",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/ghe/projects/TestGithubCI/TestXCFramework/TestLibWithXCFramework.swift",
+      "file": "/Users/runner/work/TestGithubCI/TestGithubCI/main/TestXCFramework/TestLibWithXCFramework.swift",
       "line": 12,
       "symbol": "TestLibWithXCFramework.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/ghe/projects/TestGithubCI"
+  "source_directory": "/Users/runner/work/TestGithubCI/TestGithubCI/main"
 }
